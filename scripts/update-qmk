@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd ~/qmk_firmware/
+gx stashify git pull
+make git-submodule
