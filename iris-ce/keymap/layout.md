@@ -1,4 +1,6 @@
-# Iris CE Keyboard Layout
+# Iris Keyboard Layout
+
+This is an example for the Iris keyboard.
 
 - The core layout is 2x(3x5 + 3) = 36
 
@@ -18,6 +20,7 @@ hd = d
 
 # Left mods
 x+c = lalt
+w+e = g+e
 s+hd = lsft
 # shift in L1
 up+right = lsft
@@ -80,7 +83,7 @@ lsft     z        x       c     v     b          spc || ent n          m        
 ```layer:layer1
 lock     g+s+5    vol-    play  vol+  boot           ||     boot       __       -        +        =        __
 __       `        (       )     =     ~              ||     =          _        [        ]        )        __
-__       lgui     -       esc   :     $              ||     left       down     up       right    rctl     __
+__       _        -       esc   :     $              ||     left       down     up       right    rctl     __
 __       lsft     {       }     lalt  >          __  || __  home       ent      bs       end      to(sel)  del
                                 __    __         __  || __  __         __
 ```
@@ -191,4 +194,8 @@ __   __     __     __      __     __            ||          __  __     __     __
 __   __     __     __      __     __            ||          __  __     __     __     __     __
 __   __     __     __      __     __       __   || __       __  __     __     __     __     __
                            __     __       __   || __       __  __
+```
+
+```
+
 ```
