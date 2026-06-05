@@ -5,8 +5,15 @@
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 // #define QUICK_TAP_TERM 0
 
-#define TAPPING_TERM 175
-#define PERMISSIVE_HOLD
+// TAP-HOLD SETTINGS
+// #define TAPPING_TERM 175
+// #define PERMISSIVE_HOLD
+
+// TAP-HOLD SETTINGS FOR HOME ROW MODS
+#define CHORDAL_HOLD        // only activate hold when next key is opposite hand
+#define FLOW_TAP_TERM 150   // force tap if you were typing within 150ms
+#define TAPPING_TERM 220    // up from 175 — more room to intentionally hold
+
 
 #define COMBO_TERM 40
 

@@ -10,17 +10,17 @@ layoutFn = LAYOUT
 
 ```sh aliases
 lock = c+g+q
-hf = f
-hj = j
-hk = k
-hd = d
+hf = l(f)/f
+hj = l(jk)/j
+hk = rgui/k
+hd = lgui/d
 ```
 
 ```sh combos
 
 # Left mods
 x+c = lalt
-w+e = g+e
+w+e = tab
 s+hd = lsft
 # shift in L1
 up+right = lsft

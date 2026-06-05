@@ -15,110 +15,110 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [LBASE] = LAYOUT(
-    KC_ESC,           KC_1,             KC_2,               KC_3,             KC_4,             KC_5,                       /* || */           KC_6,        KC_7,       KC_8,      KC_9,           KC_0,       KC_BSPC,
-    KC_TAB,           KC_Q,             KC_W,               KC_E,             KC_R,             KC_T,                       /* || */           KC_Y,        KC_U,       KC_I,      KC_O,           KC_P,       KC_BSLS,
-    KC_LGUI,          KC_A,             KC_S,               KC_D,             KC_F,             KC_G,                       /* || */           KC_H,        KC_J,       KC_K,      KC_L,           KC_SCLN,    KC_QUOT,
-    KC_LSFT,          KC_Z,             KC_X,               KC_C,             KC_V,             KC_B,             KC_SPC,   /* || */  KC_ENT,  KC_N,        KC_M,       KC_COMM,   KC_DOT,         KC_SLSH,    KC_RSFT,
+    KC_ESC,           KC_1,             KC_2,               KC_3,             KC_4,             KC_5,                       /* || */           KC_6,        KC_7,          KC_8,         KC_9,           KC_0,       KC_BSPC,
+    KC_TAB,           KC_Q,             KC_W,               KC_E,             KC_R,             KC_T,                       /* || */           KC_Y,        KC_U,          KC_I,         KC_O,           KC_P,       KC_BSLS,
+    KC_LGUI,          KC_A,             KC_S,               LGUI_T(KC_D),     LT(LF, KC_F),     KC_G,                       /* || */           KC_H,        LT(LJK, KC_J), RGUI_T(KC_K), KC_L,           KC_SCLN,    KC_QUOT,
+    KC_LSFT,          KC_Z,             KC_X,               KC_C,             KC_V,             KC_B,             KC_SPC,   /* || */  KC_ENT,  KC_N,        KC_M,          KC_COMM,      KC_DOT,         KC_SLSH,    KC_RSFT,
                                                                               KC_LCTL,          MO(LLAYER1),      KC_SPC,   /* || */  KC_ENT,  MO(LLAYER2), KC_RALT
   ),
   [LLAYER1] = LAYOUT(
-    LCTL(LGUI(KC_Q)), LGUI(LSFT(KC_5)), KC_VOLD,            KC_MPLY,          KC_VOLU,          QK_BOOT,                    /* || */           QK_BOOT,     _______,    KC_MINS,   KC_PLUS,        KC_EQL,     _______,
-    _______,          KC_GRV,           KC_LPRN,            KC_RPRN,          KC_EQL,           KC_TILD,                    /* || */           KC_EQL,      KC_UNDS,    KC_LBRC,   KC_RBRC,        KC_RPRN,    _______,
-    _______,          KC_UNDS,          KC_MINS,            KC_ESC,           KC_COLN,          KC_DLR,                     /* || */           KC_LEFT,     KC_DOWN,    KC_UP,     KC_RIGHT,       KC_RCTL,    _______,
-    _______,          KC_LSFT,          KC_LCBR,            KC_RCBR,          KC_LALT,          KC_RABK,          _______,  /* || */  _______, KC_HOME,     KC_ENT,     KC_BSPC,   KC_END,         TO(LSEL),   KC_DEL,
+    LCTL(LGUI(KC_Q)), LGUI(LSFT(KC_5)), KC_VOLD,            KC_MPLY,          KC_VOLU,          QK_BOOT,                    /* || */           QK_BOOT,     _______,       KC_MINS,      KC_PLUS,        KC_EQL,     _______,
+    _______,          KC_GRV,           KC_LPRN,            KC_RPRN,          KC_EQL,           KC_TILD,                    /* || */           KC_EQL,      KC_UNDS,       KC_LBRC,      KC_RBRC,        KC_RPRN,    _______,
+    _______,          KC_UNDS,          KC_MINS,            KC_ESC,           KC_COLN,          KC_DLR,                     /* || */           KC_LEFT,     KC_DOWN,       KC_UP,        KC_RIGHT,       KC_RCTL,    _______,
+    _______,          KC_LSFT,          KC_LCBR,            KC_RCBR,          KC_LALT,          KC_RABK,          _______,  /* || */  _______, KC_HOME,     KC_ENT,        KC_BSPC,      KC_END,         TO(LSEL),   KC_DEL,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     _______
   ),
   [LLAYER2] = LAYOUT(
-    KC_TILD,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,    KC_ASTR,   _______,        _______,    _______,
-    _______,          _______,          KC_VOLU,            _______,          _______,          _______,                    /* || */           KC_PLUS,     KC_7,       KC_8,      KC_9,           KC_EQL,     KC_PGUP,
-    _______,          LCTL(KC_A),       KC_LGUI,            KC_MPLY,          _______,          _______,                    /* || */           KC_MINS,     KC_4,       KC_5,      KC_6,           KC_0,       KC_PGDN,
-    _______,          _______,          KC_LSFT,            _______,          _______,          _______,          _______,  /* || */  _______, TO(LSEL),    KC_1,       KC_2,      KC_3,           KC_DOT,     _______,
+    KC_TILD,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,       KC_ASTR,      _______,        _______,    _______,
+    _______,          _______,          KC_VOLU,            _______,          _______,          _______,                    /* || */           KC_PLUS,     KC_7,          KC_8,         KC_9,           KC_EQL,     KC_PGUP,
+    _______,          LCTL(KC_A),       KC_LGUI,            KC_MPLY,          _______,          _______,                    /* || */           KC_MINS,     KC_4,          KC_5,         KC_6,           KC_0,       KC_PGDN,
+    _______,          _______,          KC_LSFT,            _______,          _______,          _______,          _______,  /* || */  _______, TO(LSEL),    KC_1,          KC_2,         KC_3,           KC_DOT,     _______,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     KC_COMM
   ),
   [LF] = LAYOUT(
-    _______,          _______,          LGUI(LSFT(KC_4)),   LGUI(LSFT(KC_5)), KC_DLR,           QK_BOOT,                    /* || */           KC_CIRC,     KC_AMPR,    KC_ASTR,   KC_MINS,        KC_EQL,     _______,
-    _______,          KC_LGUI,          KC_LSFT,            _______,          _______,          _______,                    /* || */           KC_EQL,      KC_MINS,    KC_LBRC,   KC_RBRC,        KC_PGUP,    _______,
-    _______,          KC_LALT,          KC_LSFT,            _______,          _______,          TO(LGAME),                  /* || */           KC_LEFT,     KC_DOWN,    KC_UP,     KC_RIGHT,       KC_DLR,     _______,
-    _______,          KC_LCTL,          KC_LALT,            _______,          _______,          _______,          _______,  /* || */  _______, KC_HOME,     KC_ENT,     KC_BSPC,   _______,        _______,    _______,
+    _______,          _______,          LGUI(LSFT(KC_4)),   LGUI(LSFT(KC_5)), KC_DLR,           QK_BOOT,                    /* || */           KC_CIRC,     KC_AMPR,       KC_ASTR,      KC_MINS,        KC_EQL,     _______,
+    _______,          KC_LGUI,          KC_LSFT,            _______,          _______,          _______,                    /* || */           KC_EQL,      KC_MINS,       KC_LBRC,      KC_RBRC,        KC_PGUP,    _______,
+    _______,          KC_LALT,          KC_LSFT,            _______,          _______,          TO(LGAME),                  /* || */           KC_LEFT,     KC_DOWN,       KC_UP,        KC_RIGHT,       KC_DLR,     _______,
+    _______,          KC_LCTL,          KC_LALT,            _______,          _______,          _______,          _______,  /* || */  _______, KC_HOME,     KC_ENT,        KC_BSPC,      _______,        _______,    _______,
                                                                               _______,          KC_LALT,          _______,  /* || */  _______, _______,     KC_F12
   ),
   [LJK] = LAYOUT(
-    KC_ESC,           KC_EXLM,          LGUI(LSFT(KC_TAB)), LGUI(KC_TAB),     LGUI(LSFT(KC_4)), LGUI(LSFT(KC_5)),           /* || */           QK_BOOT,     _______,    _______,   _______,        _______,    _______,
-    KC_TAB,           KC_GRV,           KC_LPRN,            KC_RPRN,          KC_EQL,           KC_TILD,                    /* || */           _______,     _______,    _______,   KC_RSFT,        KC_RALT,    _______,
-    _______,          KC_UNDS,          KC_MINS,            KC_ESC,           KC_COLN,          KC_DLR,                     /* || */           _______,     _______,    _______,   KC_RGUI,        KC_RCTL,    _______,
-    LSFT(KC_TAB),     KC_LABK,          KC_LCBR,            KC_RCBR,          KC_RABK,          _______,          _______,  /* || */  _______, _______,     _______,    _______,   KC_RALT,        KC_RCTL,    _______,
+    KC_ESC,           KC_EXLM,          LGUI(LSFT(KC_TAB)), LGUI(KC_TAB),     LGUI(LSFT(KC_4)), LGUI(LSFT(KC_5)),           /* || */           QK_BOOT,     _______,       _______,      _______,        _______,    _______,
+    KC_TAB,           KC_GRV,           KC_LPRN,            KC_RPRN,          KC_EQL,           KC_TILD,                    /* || */           _______,     _______,       _______,      KC_RSFT,        KC_RALT,    _______,
+    _______,          KC_UNDS,          KC_MINS,            KC_ESC,           KC_COLN,          KC_DLR,                     /* || */           _______,     _______,       _______,      KC_RGUI,        KC_RCTL,    _______,
+    LSFT(KC_TAB),     KC_LABK,          KC_LCBR,            KC_RCBR,          KC_RABK,          _______,          _______,  /* || */  _______, _______,     _______,       _______,      KC_RALT,        KC_RCTL,    _______,
                                                                               _______,          KC_LALT,          _______,  /* || */  _______, _______,     _______
   ),
   [LNUM] = LAYOUT(
-    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,    KC_ASTR,   TO(LBASE),      _______,    _______,
-    _______,          TO(LBASE),        KC_VOLU,            _______,          _______,          _______,                    /* || */           KC_PLUS,     KC_7,       KC_8,      KC_9,           KC_EQL,     _______,
-    _______,          LCTL(KC_A),       KC_LGUI,            KC_MPLY,          _______,          _______,                    /* || */           KC_MINS,     KC_4,       KC_5,      KC_6,           KC_0,       KC_SLSH,
-    _______,          _______,          KC_LSFT,            _______,          _______,          _______,          _______,  /* || */  _______, KC_0,        KC_1,       KC_2,      KC_3,           KC_DOT,     _______,
+    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,       KC_ASTR,      TO(LBASE),      _______,    _______,
+    _______,          TO(LBASE),        KC_VOLU,            _______,          _______,          _______,                    /* || */           KC_PLUS,     KC_7,          KC_8,         KC_9,           KC_EQL,     _______,
+    _______,          LCTL(KC_A),       KC_LGUI,            KC_MPLY,          _______,          _______,                    /* || */           KC_MINS,     KC_4,          KC_5,         KC_6,           KC_0,       KC_SLSH,
+    _______,          _______,          KC_LSFT,            _______,          _______,          _______,          _______,  /* || */  _______, KC_0,        KC_1,          KC_2,         KC_3,           KC_DOT,     _______,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     KC_COMM
   ),
   [LSNUM] = LAYOUT(
-    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,    KC_ASTR,   _______,        _______,    _______,
-    _______,          _______,          KC_VOLU,            _______,          _______,          _______,                    /* || */           KC_VOLU,     KC_AMPR,    KC_ASTR,   KC_LPRN,        KC_EQL,     _______,
-    _______,          LCTL(KC_A),       KC_LGUI,            KC_MPLY,          _______,          _______,                    /* || */           KC_VOLD,     KC_DLR,     KC_PERC,   KC_CIRC,        KC_0,       KC_SLSH,
-    _______,          _______,          KC_LSFT,            _______,          _______,          _______,          _______,  /* || */  _______, KC_0,        KC_EXLM,    KC_AT,     KC_HASH,        KC_DOT,     _______,
+    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,       KC_ASTR,      _______,        _______,    _______,
+    _______,          _______,          KC_VOLU,            _______,          _______,          _______,                    /* || */           KC_VOLU,     KC_AMPR,       KC_ASTR,      KC_LPRN,        KC_EQL,     _______,
+    _______,          LCTL(KC_A),       KC_LGUI,            KC_MPLY,          _______,          _______,                    /* || */           KC_VOLD,     KC_DLR,        KC_PERC,      KC_CIRC,        KC_0,       KC_SLSH,
+    _______,          _______,          KC_LSFT,            _______,          _______,          _______,          _______,  /* || */  _______, KC_0,        KC_EXLM,       KC_AT,        KC_HASH,        KC_DOT,     _______,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     KC_COMM
   ),
   [LCOMDOT] = LAYOUT(
-    _______,          KC_F1,            KC_F2,              KC_F3,            KC_F4,            KC_F5,                      /* || */           _______,     _______,    _______,   _______,        _______,    _______,
-    _______,          _______,          _______,            KC_PGUP,          KC_VOLU,          _______,                    /* || */           _______,     _______,    _______,   _______,        _______,    _______,
-    _______,          _______,          _______,            KC_PGDN,          KC_VOLD,          _______,                    /* || */           _______,     _______,    _______,   _______,        _______,    _______,
-    _______,          _______,          _______,            _______,          KC_MPLY,          _______,          _______,  /* || */  _______, _______,     _______,    _______,   _______,        _______,    _______,
+    _______,          KC_F1,            KC_F2,              KC_F3,            KC_F4,            KC_F5,                      /* || */           _______,     _______,       _______,      _______,        _______,    _______,
+    _______,          _______,          _______,            KC_PGUP,          KC_VOLU,          _______,                    /* || */           _______,     _______,       _______,      _______,        _______,    _______,
+    _______,          _______,          _______,            KC_PGDN,          KC_VOLD,          _______,                    /* || */           _______,     _______,       _______,      _______,        _______,    _______,
+    _______,          _______,          _______,            _______,          KC_MPLY,          _______,          _______,  /* || */  _______, _______,     _______,       _______,      _______,        _______,    _______,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     _______
   ),
   [LGAME] = LAYOUT(
-    KC_ESC,           KC_1,             KC_2,               KC_3,             KC_4,             KC_5,                       /* || */           KC_6,        KC_7,       KC_8,      KC_9,           KC_0,       KC_BSPC,
-    KC_TAB,           KC_Q,             KC_W,               KC_E,             KC_R,             KC_T,                       /* || */           KC_Y,        KC_U,       KC_I,      KC_O,           KC_P,       KC_BSLS,
-    KC_LGUI,          KC_A,             KC_S,               KC_D,             KC_F,             KC_G,                       /* || */           KC_H,        KC_J,       KC_K,      KC_L,           KC_SCLN,    KC_QUOT,
-    KC_LSFT,          KC_Z,             KC_X,               KC_C,             KC_V,             KC_B,             KC_SPC,   /* || */  KC_ENT,  KC_N,        KC_M,       KC_COMM,   KC_DOT,         KC_SLSH,    KC_RSFT,
+    KC_ESC,           KC_1,             KC_2,               KC_3,             KC_4,             KC_5,                       /* || */           KC_6,        KC_7,          KC_8,         KC_9,           KC_0,       KC_BSPC,
+    KC_TAB,           KC_Q,             KC_W,               KC_E,             KC_R,             KC_T,                       /* || */           KC_Y,        KC_U,          KC_I,         KC_O,           KC_P,       KC_BSLS,
+    KC_LGUI,          KC_A,             KC_S,               KC_D,             KC_F,             KC_G,                       /* || */           KC_H,        KC_J,          KC_K,         KC_L,           KC_SCLN,    KC_QUOT,
+    KC_LSFT,          KC_Z,             KC_X,               KC_C,             KC_V,             KC_B,             KC_SPC,   /* || */  KC_ENT,  KC_N,        KC_M,          KC_COMM,      KC_DOT,         KC_SLSH,    KC_RSFT,
                                                                               KC_LCTL,          MO(LLAYER1),      KC_SPC,   /* || */  KC_ENT,  KC_BSPC,     TO(LBASE)
   ),
   [LFKEYS] = LAYOUT(
-    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     KC_F10,     KC_F11,    KC_F12,         _______,    _______,
-    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     KC_F7,      KC_F8,     KC_F9,          _______,    _______,
-    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     KC_F4,      KC_F5,     KC_F6,          _______,    _______,
-    _______,          _______,          _______,            _______,          _______,          _______,          _______,  /* || */  _______, _______,     KC_F1,      KC_F2,     KC_F3,          _______,    _______,
+    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     KC_F10,        KC_F11,       KC_F12,         _______,    _______,
+    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     KC_F7,         KC_F8,        KC_F9,          _______,    _______,
+    _______,          _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     KC_F4,         KC_F5,        KC_F6,          _______,    _______,
+    _______,          _______,          _______,            _______,          _______,          _______,          _______,  /* || */  _______, _______,     KC_F1,         KC_F2,        KC_F3,          _______,    _______,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     _______
   ),
   [LSEL] = LAYOUT(
-    TO(LBASE),        _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,    _______,   _______,        _______,    _______,
-    _______,          TO(LBASE),        _______,            _______,          _______,          _______,                    /* || */           LGUI(KC_C),  LGUI(KC_Z), TO(LBASE), _______,        LGUI(KC_V), LGUI(KC_EQL),
-    _______,          KC_LCTL,          KC_LSFT,            KC_LALT,          KC_LGUI,          _______,                    /* || */           KC_LEFT,     KC_DOWN,    KC_UP,     KC_RIGHT,       _______,    LGUI(KC_MINS),
-    _______,          _______,          LGUI(KC_X),         LGUI(KC_C),       LGUI(KC_V),       _______,          _______,  /* || */  _______, _______,     KC_ENT,     KC_BSPC,   LALT(KC_RIGHT), TO(LBASE),  _______,
+    TO(LBASE),        _______,          _______,            _______,          _______,          _______,                    /* || */           _______,     _______,       _______,      _______,        _______,    _______,
+    _______,          TO(LBASE),        _______,            _______,          _______,          _______,                    /* || */           LGUI(KC_C),  LGUI(KC_Z),    TO(LBASE),    _______,        LGUI(KC_V), LGUI(KC_EQL),
+    _______,          KC_LCTL,          KC_LSFT,            KC_LALT,          KC_LGUI,          _______,                    /* || */           KC_LEFT,     KC_DOWN,       KC_UP,        KC_RIGHT,       _______,    LGUI(KC_MINS),
+    _______,          _______,          LGUI(KC_X),         LGUI(KC_C),       LGUI(KC_V),       _______,          _______,  /* || */  _______, _______,     KC_ENT,        KC_BSPC,      LALT(KC_RIGHT), TO(LBASE),  _______,
                                                                               _______,          _______,          _______,  /* || */  _______, _______,     TO(LBASE)
   ),
 };
 const uint16_t PROGMEM combo0[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM combo1[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM combo2[] = {KC_S, KC_D, COMBO_END};
+const uint16_t PROGMEM combo2[] = {KC_S, LGUI_T(KC_D), COMBO_END};
 const uint16_t PROGMEM combo3[] = {KC_UP, KC_RIGHT, COMBO_END};
-const uint16_t PROGMEM combo4[] = {KC_E, KC_F, COMBO_END};
+const uint16_t PROGMEM combo4[] = {KC_E, LT(LF, KC_F), COMBO_END};
 const uint16_t PROGMEM combo5[] = {KC_LGUI, KC_A, COMBO_END};
 const uint16_t PROGMEM combo6[] = {KC_LGUI, KC_A, KC_S, COMBO_END};
 const uint16_t PROGMEM combo7[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo8[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM combo9[] = {KC_K, KC_L, COMBO_END};
-const uint16_t PROGMEM combo10[] = {KC_J, KC_I, COMBO_END};
+const uint16_t PROGMEM combo9[] = {RGUI_T(KC_K), KC_L, COMBO_END};
+const uint16_t PROGMEM combo10[] = {LT(LJK, KC_J), KC_I, COMBO_END};
 const uint16_t PROGMEM combo11[] = {KC_SCLN, KC_QUOT, COMBO_END};
 const uint16_t PROGMEM combo12[] = {KC_L, KC_SCLN, COMBO_END};
 const uint16_t PROGMEM combo13[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM combo14[] = {KC_X, KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM combo15[] = {KC_V, KC_B, COMBO_END};
-const uint16_t PROGMEM combo16[] = {KC_D, KC_F, COMBO_END};
-const uint16_t PROGMEM combo17[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM combo18[] = {KC_J, KC_L, COMBO_END};
-const uint16_t PROGMEM combo19[] = {KC_J, KC_O, COMBO_END};
-const uint16_t PROGMEM combo20[] = {KC_W, KC_F, COMBO_END};
+const uint16_t PROGMEM combo16[] = {LGUI_T(KC_D), LT(LF, KC_F), COMBO_END};
+const uint16_t PROGMEM combo17[] = {LT(LJK, KC_J), RGUI_T(KC_K), COMBO_END};
+const uint16_t PROGMEM combo18[] = {LT(LJK, KC_J), KC_L, COMBO_END};
+const uint16_t PROGMEM combo19[] = {LT(LJK, KC_J), KC_O, COMBO_END};
+const uint16_t PROGMEM combo20[] = {KC_W, LT(LF, KC_F), COMBO_END};
 const uint16_t PROGMEM combo21[] = {KC_U, KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM combo22[] = {KC_M, KC_COMM, COMBO_END};
 
 combo_t key_combos[23] = {
   COMBO(combo0, KC_LALT),
-  COMBO(combo1, LGUI(KC_E)),
+  COMBO(combo1, KC_TAB),
   COMBO(combo2, KC_LSFT),
   COMBO(combo3, KC_LSFT),
   COMBO(combo4, KC_LGUI),
