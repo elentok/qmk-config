@@ -12,16 +12,16 @@ layoutFn = LAYOUT
 lock = c+g+q
 
 # left home row mods
-ha = a
-hs = s
+ha = lctl/a
+hs = lsft/s
 hd = lgui/d
 hf = l(f)/f
 
 # right home row mods
 hj = l(jk)/j
 hk = rgui/k
-hl = l
-hsemi = ;
+hl = rsft/l
+hsemi = rctl/;
 ```
 
 ```sh combos
