@@ -10,10 +10,18 @@ layoutFn = LAYOUT
 
 ```sh aliases
 lock = c+g+q
+
+# left home row mods
+ha = a
+hs = s
+hd = lgui/d
 hf = l(f)/f
+
+# right home row mods
 hj = l(jk)/j
 hk = rgui/k
-hd = lgui/d
+hl = l
+hsemi = ;
 ```
 
 ```sh combos
@@ -25,8 +33,8 @@ s+hd = lsft
 # shift in L1
 up+right = lsft
 e+hf = lgui
-lgui+a = lctl
-lgui+a+s = a+lctl
+lgui+ha = lctl
+lgui+ha+hs = a+lctl
 
 q+w = g+`
 
@@ -47,7 +55,7 @@ hd+hf = mo(f)
 hj+hk = mo(jk)
 
 # Keys
-hj+l = esc
+hj+hl = esc
 hj+o = =
 w+hf = `
 
@@ -73,7 +81,7 @@ m+, = g+1
 ```layer:base
 esc      1        2       3     4     5              ||     6          7        8        9        0        bs
 tab      q        w       e     r     t              ||     y          u        i        o        p        \
-lgui     a        s       hd    hf    g              ||     h          hj       hk       l        ;        '
+lgui     ha       hs      hd    hf    g              ||     h          hj       hk       hl       hsemi    '
 lsft     z        x       c     v     b          spc || ent n          m        ,        .        /        rsft
                                 lctl  mo(layer1) spc || ent mo(layer2) ralt
 ```
@@ -155,7 +163,7 @@ esc      1        2       3     4     5              ||     6          7        
 tab      q        w       e     r     t              ||     y          u        i        o        p        \
 lgui     a        s       d     f     g              ||     h          j        k        l        ;        '
 lsft     z        x       c     v     b          spc || ent n          m        ,        .        /        rsft
-                                lctl  mo(layer1) spc || ent bs         to(base)
+                                lalt  mo(layer1) spc || ent bs         to(base)
 ```
 
 ## FKeys Layer
