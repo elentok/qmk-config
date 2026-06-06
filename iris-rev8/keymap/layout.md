@@ -29,7 +29,7 @@ hsemi = rctl/;
 # Left mods
 x+c = lalt
 w+e = tab
-s+hd = lsft
+hs+hd = lsft
 # shift in L1
 up+right = lsft
 e+hf = lgui
@@ -41,7 +41,7 @@ q+w = g+`
 # Right mods
 # ,+. = ralt
 ,+. = to(sel)
-hk+l = rsft
+hk+hl = rsft
 hj+i = rgui
 ;+quot = rctl
 
