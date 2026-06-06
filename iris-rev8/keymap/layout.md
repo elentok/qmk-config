@@ -51,7 +51,8 @@ l+; = to(num)
 c+v = mo(num)
 x+c+v = mo(snum)
 v+b = mo(fkeys)
-hd+hf = mo(f)
+# hd+hf = mo(f)
+hd+hf = l(f)/esc
 hj+hk = mo(jk)
 
 # Keys

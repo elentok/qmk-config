@@ -133,7 +133,7 @@ combo_t key_combos[23] = {
   COMBO(combo13, MO(LNUM)),
   COMBO(combo14, MO(LSNUM)),
   COMBO(combo15, MO(LFKEYS)),
-  COMBO(combo16, MO(LF)),
+  COMBO(combo16, LT(LF, KC_ESC)),
   COMBO(combo17, MO(LJK)),
   COMBO(combo18, KC_ESC),
   COMBO(combo19, KC_EQL),
