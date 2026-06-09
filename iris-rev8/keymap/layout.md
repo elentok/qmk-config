@@ -13,14 +13,14 @@ lock = c+g+q
 
 # left home row mods
 ha = lctl/a
-hs = lsft/s
+hs = lalt/s
 hd = lgui/d
 hf = l(f)/f
 
 # right home row mods
 hj = l(jk)/j
 hk = rgui/k
-hl = rsft/l
+hl = ralt/l
 hsemi = rctl/;
 ```
 
@@ -80,7 +80,7 @@ m+, = g+1
 ## Base layer
 
 ```layer:base
-esc      1        2       3     4     5              ||     6          7        8        9        0        bs
+esc      1        2       3     4     5              ||     6          7        8        9        0        noop
 tab      q        w       e     r     t              ||     y          u        i        o        p        \
 lgui     ha       hs      hd    hf    g              ||     h          hj       hk       hl       hsemi    '
 lsft     z        x       c     v     b          spc || ent n          m        ,        .        /        rsft
@@ -111,10 +111,10 @@ __       __       lsft    __    __    __         __  || __  to(sel)    1        
 
 ```layer:f
 __       __       g+s+4   g+s+5 $     boot           ||     ^          &        *        -        =        __
-__       lgui     lsft    __    __    __             ||     =          -        [        ]        pgup     __
-__       lalt     lsft    __    __    to(game)       ||     left       down     up       right    $        __
-__       lctl     lalt    __    __    __         __  || __  home       ent      bs       __       __       __
-                                __    lalt       __  || __  __         f12
+__       __       __      g+s+5 __    __             ||     =          -        [        ]        pgup     __
+__       lctl     lalt    lgui  __    to(game)       ||     left       down     up       right    $        __
+__       __       __      __    __    __         __  || __  home       ent      bs       __       __       __
+                                __    lsft       __  || __  __         f12
 ```
 
 ## Layer: JK (when JK are held/tapped)
