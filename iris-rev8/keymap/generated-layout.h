@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [LF] = LAYOUT(
     _______,          _______,          LGUI(LSFT(KC_4)),   LGUI(LSFT(KC_5)), KC_DLR,           QK_BOOT,                    /* || */           KC_CIRC,     KC_AMPR,       KC_ASTR,      KC_MINS,        KC_EQL,          _______,
-    _______,          _______,          _______,            LGUI(LSFT(KC_5)), _______,          _______,                    /* || */           KC_EQL,      KC_MINS,       KC_LBRC,      KC_RBRC,        KC_PGUP,         _______,
+    _______,          KC_GRV,           KC_TAB,             LGUI(LSFT(KC_5)), _______,          _______,                    /* || */           KC_EQL,      KC_MINS,       KC_LBRC,      KC_RBRC,        KC_PGUP,         _______,
     _______,          KC_LCTL,          KC_LALT,            KC_LGUI,          _______,          TO(LGAME),                  /* || */           KC_LEFT,     KC_DOWN,       KC_UP,        KC_RIGHT,       KC_DLR,          _______,
     _______,          _______,          _______,            _______,          _______,          _______,          _______,  /* || */  _______, KC_HOME,     KC_ENT,        KC_BSPC,      _______,        _______,         _______,
                                                                               _______,          KC_LSFT,          _______,  /* || */  _______, _______,     KC_F12

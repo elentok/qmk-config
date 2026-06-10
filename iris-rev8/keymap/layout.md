@@ -111,7 +111,7 @@ __       __       lsft    __    __    __         __  || __  to(sel)    1        
 
 ```layer:f
 __       __       g+s+4   g+s+5 $     boot           ||     ^          &        *        -        =        __
-__       __       __      g+s+5 __    __             ||     =          -        [        ]        pgup     __
+__       `        tab     g+s+5 __    __             ||     =          -        [        ]        pgup     __
 __       lctl     lalt    lgui  __    to(game)       ||     left       down     up       right    $        __
 __       __       __      __    __    __         __  || __  home       ent      bs       __       __       __
                                 __    lsft       __  || __  __         f12
