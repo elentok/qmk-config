@@ -16,12 +16,14 @@ ha = lctl/a
 hs = lalt/s
 hd = lgui/d
 hf = l(f)/f
+hv = l(f)/v
 
 # right home row mods
 hj = l(jk)/j
 hk = rgui/k
 hl = ralt/l
 hsemi = rctl/;
+hcomma = l(jk)/,
 ```
 
 ```sh combos
@@ -40,7 +42,7 @@ q+w = g+`
 
 # Right mods
 # ,+. = ralt
-,+. = to(sel)
+hcomma+. = to(sel)
 hk+hl = rsft
 hj+i = rgui
 ;+quot = rctl
@@ -48,9 +50,9 @@ hj+i = rgui
 l+; = to(num)
 
 # Layer switchers
-c+v = mo(num)
-x+c+v = mo(snum)
-v+b = mo(fkeys)
+c+hv = mo(num)
+x+c+hv = mo(snum)
+hv+b = mo(fkeys)
 # hd+hf = mo(f)
 hd+hf = l(f)/esc
 hj+hk = mo(jk)
@@ -64,7 +66,7 @@ w+hf = `
 u+i+o = c+s+g+i
 
 # Switch language
-m+, = g+1
+m+hcomma = g+1
 ```
 
 ## Keyboard Structure
@@ -83,7 +85,7 @@ m+, = g+1
 esc      1        2       3     4     5              ||     6          7        8        9        0        noop
 tab      q        w       e     r     t              ||     y          u        i        o        p        \
 lgui     ha       hs      hd    hf    g              ||     h          hj       hk       hl       hsemi    '
-lsft     z        x       c     v     b          spc || ent n          m        ,        .        /        rsft
+lsft     z        x       c     hv    b          spc || ent n          m        hcomma   .        /        rsft
                                 lctl  mo(layer1) spc || ent mo(layer2) ralt
 ```
 
