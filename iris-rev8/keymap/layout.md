@@ -82,111 +82,111 @@ m+hcomma = g+1
 ## Base layer
 
 ```layer:base
-esc      1        2       3     4     5              ||     6          7        8        9        0        noop
-tab      q        w       e     r     t              ||     y          u        i        o        p        \
-lgui     ha       hs      hd    hf    g              ||     h          hj       hk       hl       hsemi    '
-lsft     z        x       c     hv    b          spc || ent n          m        hcomma   .        /        rsft
-                                lctl  mo(layer1) spc || ent mo(layer2) ralt
+esc      1        2       3     4     5              ||     6       7        8        9        0        bs
+tab      q        w       e     r     t              ||     y       u        i        o        p        \
+lgui     ha       hs      hd    hf    g              ||     h       hj       hk       hl       hsemi    '
+lsft     z        x       c     hv    b          spc || ent n       m        hcomma   .        /        rsft
+                                lctl  mo(layer1) spc || ent rsft    bs
 ```
 
 ## Layer1
 
 ```layer:layer1
-lock     g+s+5    vol-    play  vol+  boot           ||     boot       __       -        +        =        __
-__       `        (       )     =     ~              ||     =          _        [        ]        )        __
-__       _        -       esc   :     $              ||     left       down     up       right    rctl     __
-__       lsft     {       }     lalt  >          __  || __  home       ent      bs       end      to(sel)  del
-                                __    __         __  || __  __         __
+lock     g+s+5    vol-    play  vol+  boot           ||     boot    __       -        +        =        __
+__       `        (       )     =     ~              ||     =       _        [        ]        )        __
+__       _        -       esc   :     $              ||     left    down     up       right    rctl     __
+__       lsft     {       }     lalt  >          __  || __  home    ent      bs       end      to(sel)  del
+                                __    __         __  || __  __      __
 ```
 
 ## Layer2
 
 ```layer:layer2
-~        __       __      __    __    __             ||     __         __       *        __       __       __
-__       __       vol+    __    __    __             ||     +          7        8        9        =        pgup
-__       c+a      lgui    play  __    __             ||     -          4        5        6        0        pgdn
-__       __       lsft    __    __    __         __  || __  to(sel)    1        2        3        .        __
-                                __    __         __  || __  __         ,
+~        __       __      __    __    __             ||     __      __       *        __       __       __
+__       __       vol+    __    __    __             ||     +       7        8        9        =        pgup
+__       c+a      lgui    play  __    __             ||     -       4        5        6        0        pgdn
+__       __       lsft    __    __    __         __  || __  to(sel) 1        2        3        .        __
+                                __    __         __  || __  __      ,
 ```
 
 ## Layer: DF (when DF are held/tapped)
 
 ```layer:f
-__       __       g+s+4   g+s+5 $     boot           ||     ^          &        *        -        =        __
-__       `        tab     g+s+5 __    __             ||     =          -        [        ]        pgup     __
-__       lctl     lalt    lgui  __    to(game)       ||     left       down     up       right    $        __
-__       __       __      __    __    __         __  || __  home       ent      bs       __       __       __
-                                __    lsft       __  || __  __         f12
+__       __       g+s+4   g+s+5 $     boot           ||     ^       &        *        -        =        __
+__       `        tab     g+s+5 __    __             ||     =       -        [        ]        pgup     __
+__       lctl     lalt    lgui  __    to(game)       ||     left    down     up       right    $        __
+__       __       __      __    __    __         __  || __  home    ent      bs       __       __       __
+                                __    lsft       __  || __  __      f12
 ```
 
 ## Layer: JK (when JK are held/tapped)
 
 ```layer:jk
-esc      !        g+s+tab g+tab g+s+4 g+s+5          ||     boot       __       __       __       __       __
-tab      `        (       )     =     ~              ||     __         __       __       rsft     ralt     __
-__       _        -       esc   :     $              ||     __         __       __       rgui     rctl     __
-s+tab    <        {       }     >     __         __  || __  __         __       __       ralt     rctl     __
-                                __    lalt       __  || __  __         __
+esc      !        g+s+tab g+tab g+s+4 g+s+5          ||     boot    __       __       __       __       __
+tab      `        (       )     =     ~              ||     __      __       __       rsft     ralt     __
+__       _        -       esc   :     $              ||     __      __       __       rgui     rctl     __
+s+tab    <        {       }     >     __         __  || __  __      __       __       ralt     rctl     __
+                                __    lalt       __  || __  __      __
 ```
 
 ## Layer: Numbers (when CV is held)
 
 ```layer:num
-__       __       __      __    __    __             ||     __         __       *        to(base) __       __
-__       to(base) vol+    __    __    __             ||     +          7        8        9        =        __
-__       c+a      lgui    play  __    __             ||     -          4        5        6        0        /
-__       __       lsft    __    __    __         __  || __  0          1        2        3        .        __
-                                __    __         __  || __  __         ,
+__       __       __      __    __    __             ||     __      __       *        to(base) __       __
+__       to(base) vol+    __    __    __             ||     +       7        8        9        =        __
+__       c+a      lgui    play  __    __             ||     -       4        5        6        0        /
+__       __       lsft    __    __    __         __  || __  0       1        2        3        .        __
+                                __    __         __  || __  __      ,
 ```
 
 ## Layer: Shifted Numbers (when XCV is held)
 
 ```layer:snum
-__       __       __      __    __    __             ||     __         __       *        __       __       __
-__       __       vol+    __    __    __             ||     vol+       &        *        (        =        __
-__       c+a      lgui    play  __    __             ||     vol-       $        %        ^        0        /
-__       __       lsft    __    __    __         __  || __  0          !        @        #        .        __
-                                __    __         __  || __  __         ,
+__       __       __      __    __    __             ||     __      __       *        __       __       __
+__       __       vol+    __    __    __             ||     vol+    &        *        (        =        __
+__       c+a      lgui    play  __    __             ||     vol-    $        %        ^        0        /
+__       __       lsft    __    __    __         __  || __  0       !        @        #        .        __
+                                __    __         __  || __  __      ,
 ```
 
 ## Layer: COMDOT (when comma and dot are held/tapped)
 
 ```layer:comdot
-__       f1       f2      f3    f4    f5             ||     __         __       __       __       __       __
-__       __       __      pgup  vol+  __             ||     __         __       __       __       __       __
-__       __       __      pgdn  vol-  __             ||     __         __       __       __       __       __
-__       __       __      __    play  __         __  || __  __         __       __       __       __       __
-                                __    __         __  || __  __         __
+__       f1       f2      f3    f4    f5             ||     __      __       __       __       __       __
+__       __       __      pgup  vol+  __             ||     __      __       __       __       __       __
+__       __       __      pgdn  vol-  __             ||     __      __       __       __       __       __
+__       __       __      __    play  __         __  || __  __      __       __       __       __       __
+                                __    __         __  || __  __      __
 ```
 
 ## Layer: Gaming
 
 ```layer:game
-esc      1        2       3     4     5              ||     6          7        8        9        0        bs
-tab      q        w       e     r     t              ||     y          u        i        o        p        \
-lgui     a        s       d     f     g              ||     h          j        k        l        ;        '
-lsft     z        x       c     v     b          spc || ent n          m        ,        .        /        rsft
-                                lalt  mo(layer1) spc || ent bs         to(base)
+esc      1        2       3     4     5              ||     6       7        8        9        0        bs
+tab      q        w       e     r     t              ||     y       u        i        o        p        \
+lgui     a        s       d     f     g              ||     h       j        k        l        ;        '
+lsft     z        x       c     v     b          spc || ent n       m        ,        .        /        rsft
+                                lalt  mo(layer1) spc || ent bs      to(base)
 ```
 
 ## FKeys Layer
 
 ```layer:fkeys
-__       __       __      __    __    __             ||     __         f10      f11      f12      __       __
-__       __       __      __    __    __             ||     __         f7       f8       f9       __       __
-__       __       __      __    __    __             ||     __         f4       f5       f6       __       __
-__       __       __      __    __    __         __  || __  __         f1       f2       f3       __       __
-                                __    __         __  || __  __         __
+__       __       __      __    __    __             ||     __      f10      f11      f12      __       __
+__       __       __      __    __    __             ||     __      f7       f8       f9       __       __
+__       __       __      __    __    __             ||     __      f4       f5       f6       __       __
+__       __       __      __    __    __         __  || __  __      f1       f2       f3       __       __
+                                __    __         __  || __  __      __
 ```
 
 ## Selection layer
 
 ```layer:sel
-to(base) __       __      __    __    __             ||     __         __       __       __       __       __
-__       to(base) __      __    __    __             ||     g+c        g+z      to(base) __       g+v      g+=
-__       lctl     lsft    lalt  lgui  __             ||     left       down     up       right    __       g+-
-__       __       g+x     g+c   g+v   __         __  || __  __         ent      bs       a+right  to(base) __
-                                __    __         __  || __  __         to(base)
+to(base) __       __      __    __    __             ||     __      __       __       __       __       __
+__       to(base) __      __    __    __             ||     g+c     g+z      to(base) __       g+v      g+=
+__       lctl     lsft    lalt  lgui  __             ||     left    down     up       right    __       g+-
+__       __       g+x     g+c   g+v   __         __  || __  __      ent      bs       a+right  to(base) __
+                                __    __         __  || __  __      to(base)
 ```
 
 ```disabled:layer:sel
