@@ -165,8 +165,8 @@ __       __       __      __    play  __         __  || __  __      __       __ 
 esc      1        2       3     4     5              ||     6       7        8        9        0        bs
 tab      q        w       e     r     t              ||     y       u        i        o        p        \
 lgui     a        s       d     f     g              ||     h       j        k        l        ;        '
-lsft     z        x       c     v     b          spc || ent n       m        ,        .        /        rsft
-                                lalt  mo(layer1) spc || ent bs      to(base)
+lsft     z        x       c     v     b          spc || ent n       m        ,        .        /        to(base)
+                                lalt  mo(layer1) spc || ent rsft    bs
 ```
 
 ## FKeys Layer
