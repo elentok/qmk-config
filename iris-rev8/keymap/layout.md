@@ -12,18 +12,28 @@ layoutFn = LAYOUT
 lock = c+g+q
 
 # left home row mods
-ha = lctl/a
-hs = lalt/s
-hd = lgui/d
-hf = l(f)/f
-hv = l(f)/v
+# ha = lctl/a
+# hs = lalt/s
+# hd = lgui/d
+# hf = l(f)/f
+# hv = l(f)/v
+ha = a
+hs = s
+hd = d
+hf = f
+hv = v
 
 # right home row mods
-hj = l(jk)/j
-hk = rgui/k
-hl = ralt/l
-hsemi = rctl/;
-hcomma = l(jk)/,
+# hj = l(jk)/j
+# hk = rgui/k
+# hl = ralt/l
+# hsemi = rctl/;
+# hcomma = l(jk)/,
+hj = j
+hk = k
+hl = l
+hsemi = ;
+hcomma = ,
 ```
 
 ```sh combos
@@ -53,8 +63,8 @@ l+; = to(num)
 c+hv = mo(num)
 x+c+hv = mo(snum)
 hv+b = mo(fkeys)
-# hd+hf = mo(f)
-hd+hf = l(f)/esc
+hd+hf = mo(f)
+# hd+hf = l(f)/esc
 hj+hk = mo(jk)
 
 # Keys
@@ -132,11 +142,11 @@ s+tab    <        {       }     >     __         __  || __  __      __       __ 
 ## Layer: Numbers (when CV is held)
 
 ```layer:num
-__       __       __      __    __    __             ||     __      __       *        to(base) __       __
+__       __       __      __    __    __             ||     __      ,        *        to(base) __       __
 __       to(base) vol+    __    __    __             ||     +       7        8        9        =        __
 __       c+a      lgui    play  __    __             ||     -       4        5        6        0        /
 __       __       lsft    __    __    __         __  || __  0       1        2        3        .        __
-                                __    __         __  || __  __      ,
+                                __    __         __  || __  __      __
 ```
 
 ## Layer: Shifted Numbers (when XCV is held)
